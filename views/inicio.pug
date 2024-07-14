@@ -1,0 +1,31 @@
+extends ./layout/index
+block slider 
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5 
+            .col-md-6 
+                p  Morbi dictum odio est. Nulla augue dui, mollis ac purus auctor, accumsan luctus odio. Donec sagittis tincidunt fermentum. Sed aliquam consequat semper. Phasellus sit amet nisl eros. Ut ultricies ac erat ut eleifend. Sed tempor sed lorem vel laoreet.
+                p Nulla vel justo massa. Morbi nibh tortor, porta nec congue vehicula, scelerisque a massa. Nunc porttitor leo metus, eu elementum lorem facilisis eu. Praesent venenatis semper aliquam. Duis volutpat, tortor ullamcorper volutpat consectetur, eros elit lobortis arcu, sit amet accumsan nisl lacus hendrerit dolor.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen de nosotros" class='img-fluid')
+        
+        include ./layout/bloque_viajes 
+
+    .descuento 
+        .container 
+            .row
+                .col-md-6
+                    .contenido
+                        h3 10% de Descuento 
+                        p.titulo Viaje a Canada
+                        p.fecha 20/08/2024 - 28/08/2024
+                        p.precio $2500 USD
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
+        
